@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Angelwar day2 test 圆角 阴影 边界图片</title>
+<style>
+div{
+width:100px;
+height:75px;
+background-color:red;
+border:1px solid black
+}
+#div2{
+transform:rotate(30deg);
+box-shadow: 10px 10px 5px #888888;
+	border-radius:25px;
+}
+div
+{
+	border:15px solid transparent;
+	padding:10px 20px;
+}
+#round
+{
+	-webkit-border-image:url(border.png) 30 30 round; /* Safari 5 and older */
+	-o-border-image:url(border.png) 30 30 round; /* Opera */
+	border-image:url(border.png) 30 30 round;
+}
+
+#stretch
+{
+	-webkit-border-image:url(border.png) 30 30 stretch; /* Safari 5 and older */
+	-o-border-image:url(border.png) 30 30 stretch; /* Opera */
+	border-image:url(border.png) 30 30 stretch;
+}
+#rcorners1 {
+    border-radius: 25px;
+    background: #8AC007;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;    
+}
+
+#rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #8AC007;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;    
+}
+
+#rcorners3 {
+    border-radius: 25px;
+    background: url(border.png);
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;    
+}
+</style></head>
+<body>
+<div>hello ，this is a div</div>
+<div id="div2">你好。这是一个 DIV 元素。</div>
+<p><b>注意: </b> Internet Explorer 不支持 border-image 属性。</p>
+<p> border-image 属性用于设置图片的边框。</p>
+
+<div id="round">这里，图像平铺（重复）来填充该区域。</div>
+<br>
+<div id="stretch">这里，图像被拉伸以填充该区域。</div>
+
+<p>这是我们使用的图片素材：</p>
+<img src="border.png" />
+<p> border-radius 属性允许向元素添加圆角。</p>
+<p>指定背景颜色元素的圆角:</p>
+<p id="rcorners1">圆角</p>
+<p>指定边框元素的圆角:</p>
+<p id="rcorners2">圆角</p>
+<p>指定背景图片元素的圆角:</p>
+<p id="rcorners3">圆角</p>
+</body>
+</html>
