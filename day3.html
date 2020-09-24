@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<mata charset="utf-8">
+<title>day3 test js</title>
+</head>
+<body>
+<div id="div1">div1</div>
+<div id="div2">div2</div>
+<div id="div3">div3</div>
+<button id="button" onclick="showDate()">div3</div>
+<style>
+div{
+width:100px;
+height:100px;
+background-color:red;
+border:1px solid black}
+#div1{
+background-color:green;
+}
+#div2{
+background-color:gray;
+}
+#div3{
+background-color:yellow;
+width:200px;
+}
+</style>
+
+<script>
+function showDate(){
+document.getElementById("div1").innerHTML=Date();
+//error:  document.getElementById("div1").innerHTML=Data();
+}
+
+</script>
+</body>
+</html>
